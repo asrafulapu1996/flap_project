@@ -48,7 +48,7 @@ Crystal International Group Ltd.
 
 ## 🏗️ System Architecture
 
-![Layered Architecture](docs/image/layered-architecture.png)
+![Layered Architecture](docs/image/System%20Process%20Flow.png)
 
 ### 🔹 Multilayer Control Architecture
 
@@ -79,40 +79,66 @@ Physical Infrastructure
 ```
 
 **Reference Figures:**
-- `docs/image/CICS_Information_Flow.png` — Information hierarchy  
-- `docs/image/Overall_Process_Flow.PNG` — Material and data flow  
-- `docs/image/System_Process_Flow.png` — Control logic and process coordination  
+
+![CICS Information Flow](docs/image/CICS_Information_Flow.png)  
+*Information hierarchy*
+
+![Overall Process Flow](docs/image/Overall_Process_Flow.PNG)  
+*Material and data flow*
+
+![System Process Flow](docs/image/System%20Process%20Flow.png)  
+*Control logic and process coordination*  
 
 ---
 
 ## ⚙️ Process Flow Breakdown
 
 ### 🟦 Operation Center
-Centralized dashboard for monitoring all robotic and automation systems.  
-- `docs/image/Operation_Center_Main_Interface.PNG`  
-- `docs/image/Operation_Center_Second_Interface.PNG`
+Centralized dashboard for monitoring all robotic and automation systems.
+
+![Operation Center Main Interface](docs/image/Operation_Center_Main_Interface.PNG)  
+*Operation Center Main Interface*
+
+![Operation Center Second Interface](docs/image/Operation_Center_Second_Interface.PNG)  
+*Operation Center Second Interface*
 
 ### 🟩 Cutting & Spreading Zone
-Automated fabric spreading and cutting managed by the CICS system.  
-- `docs/image/Cutting_Task_Allocation_as_per_CICS.jpg`  
-- `docs/image/Spreading_Process_User_Interface.jpg`  
-- `docs/image/Spreading_Operator_Working.jpg`
+Automated fabric spreading and cutting managed by the CICS system.
+
+<!-- Images not available in repository:
+- Cutting_Task_Allocation_as_per_CICS.jpg
+- Spreading_Process_User_Interface.jpg
+- Spreading_Operator_Working.jpg
+-->
 
 ### 🟨 Relaxation Zone
-Automated relaxation process ensuring consistent fabric handling before cutting.  
-- `docs/image/Relaxation_Process_Flow.PNG`  
-- `docs/image/Relax_WIP_Monitoring.jpg`  
-- `docs/image/Relax_Operator_Working.jpg`
+Automated relaxation process ensuring consistent fabric handling before cutting.
+
+![Relaxation Process Flow](docs/image/Relaxation_Process_Flow.PNG)  
+*Relaxation Process Flow*
+
+<!-- Images not available in repository:
+- Relax_WIP_Monitoring.jpg
+- Relax_Operator_Working.jpg
+-->
 
 ### 🟥 Inspection Zone
-AI-based visual inspection for fabric quality and defect detection.  
-- `docs/image/Inspection_WorkStaton.jpg`  
-- `docs/image/Inspection_Worker_Operationg.jpg`
+AI-based visual inspection for fabric quality and defect detection.
+
+<!-- Images not available in repository:
+- Inspection_WorkStaton.jpg
+- Inspection_Worker_Operationg.jpg
+-->
 
 ### 🟧 AGV / AMR Transportation
-Autonomous robots perform inter-process material transport and staging.  
-- Charging Stations: `docs/image/AGV_Charging_Station_2.jpg`, `docs/image/AGV_Charging_Station_3.jpg`, `docs/image/AGV_Charing_Station.jpg`  
-- Empty Trolley Zone: `docs/image/Empty_Trolley_Zone.jpg`
+Autonomous robots perform inter-process material transport and staging.
+
+<!-- Images not available in repository:
+- AGV_Charging_Station_2.jpg
+- AGV_Charging_Station_3.jpg
+- AGV_Charing_Station.jpg
+- Empty_Trolley_Zone.jpg
+-->
 
 ---
 
@@ -171,12 +197,18 @@ This project demonstrates a **real-world Industry 4.0 architecture** with strong
 
 ## 🖼️ Demonstrations
 
-| Category | Example Interfaces |
-|-----------|--------------------|
-| **System Monitoring** | `docs/image/RCS_Main_Interface.PNG`, `docs/image/RCS_Statics_Interface.PNG` |
-| **Process Flow** | `docs/image/System_Process_Flow.png`, `docs/image/Overall_Process_Flow.PNG` |
-| **Automation Zones** | `docs/image/Spreading_User_Interface.jpg`, `docs/image/Inspection_WorkStaton.jpg` |
-| **AGV Operations** | `docs/image/AGV_Charging_Station_2.jpg`, `docs/image/AGV_Charging_Station_3.jpg` |
+### System Monitoring
+
+![RCS Main Interface](docs/image/RCS_Main_Interface.PNG)  
+*RCS Main Interface*
+
+![RCS Statistics Interface](docs/image/RCS_Statics_Interface.PNG)  
+*RCS Statistics Interface*
+
+### HIKRobot Platform Architecture
+
+![HIKRobot Platform Architecture](docs/image/HIKRobot_Platform_Architecture.jpg)  
+*HIKRobot Platform Architecture*
 
 ---
 
