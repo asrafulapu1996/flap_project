@@ -1,4 +1,4 @@
-# 🤖 Robotics and Automation in RMG Manufacturing (FLAP Project)
+# 🤖 FLAP-Robotics and Automation in RMG Manufacturing
 
 **Crystal International Group Ltd. | Amigo Bangladesh Ltd.**  
 *Industry 4.0 Implementation in Ready-Made Garments (RMG) Manufacturing*
@@ -15,7 +15,7 @@
 
 ## 🧠 Overview
 
-The **FLAP Project** (Factory Logistics Automation Platform) is a flagship **Industry 4.0 initiative** by **Crystal International Group Ltd.**, one of the world’s leading **Ready-Made Garments (RMG)** manufacturers.  
+The **FLAP Project** (Finishing Center, Logistic Center, Assembly Center, Parts Center) is a flagship **Industry 4.0 initiative** by **Crystal International Group Ltd.**, one of the world’s leading **Ready-Made Garments (RMG)** manufacturers.  
 It integrates **robotics**, **industrial automation**, and **digital manufacturing systems** into a unified, intelligent production ecosystem.
 
 After successful implementation in China, FLAP demonstrated:
@@ -48,7 +48,9 @@ Crystal International Group Ltd.
 
 ## 🏗️ System Architecture
 
-![Layered Architecture](docs/image/layered-architecture.png)
+<p align="center">
+  <img src="docs/image/HIKRobot_Platform_Architecture.jpg" alt="System Flow" width="75%" style="margin-right:15px;"/>
+</p>
 
 ### 🔹 Multilayer Control Architecture
 
@@ -56,16 +58,11 @@ The FLAP architecture follows a **hierarchical control model**, ensuring seamles
 
 ```
 Enterprise Layer
- ├── CICS (Central Information & Control System)
- │    ├── MES (Manufacturing Execution System)
- │    ├── WMS (Warehouse Management System)
- │    └── RCS (Robotic Control System)
- │
- └── Control & Orchestration Layer
-      ├── Orchestrator / Scheduler (Job allocation, KPI, logging)
-      ├── Fleet Manager (AGV task allocation & optimization)
-      └── Integration API (OPC-UA / REST / MQTT)
-
+ ├── CICS (Crystal Integrated Cutting System)
+ ├── MES (Manufacturing Execution System)
+ ├── WMS (Warehouse Management System)
+ └── RCS (Robotic Control System)
+ 
 Field Layer
  ├── AGV / AMR Robots (Navigation, local control)
  ├── Robotic Arms (Pick/place, loading)
@@ -79,30 +76,45 @@ Physical Infrastructure
 ```
 
 **Reference Figures:**
-- ![CICS Information Flow](docs/image/CICS_Information_Flow.png)
-- ![Overall Process Flow](docs/image/Overall_Process_Flow.PNG)
-- ![System Process Flow](docs/image/System_Process_Flow.png)
+<p align="center">
+  <img src="docs/image/System Process Flow.png" alt="System Flow" width="75%" style="margin-right:15px;"/>
+</p>
 
 ---
 
 ## ⚙️ Process Flow Breakdown
 
-### 🟦 Operation Center
-Centralized dashboard for monitoring all robotic and automation systems.  
-- ![Operation Center Main Interface](docs/image/Operation_Center_Main_Interface.PNG)
-- ![Operation Center Second Interface](docs/image/Operation_Center_Second_Interface.PNG)
+### 🟦 Overall Process Flow
+Overall flow of process how material and informations transferred processwise. 
+<p align="center">
+  <img src="docs/image/Overall_Process_Flow.PNG" alt="Overall Flow" width="75%" style="margin-right:15px;"/>  
+</p>
 
-### 🟩 Cutting & Spreading Zone
-Automated fabric spreading and cutting managed by the CICS system.  
-- ![Cutting Task Allocation as per CICS](docs/image/Cutting_Task_Allocation_as_per_CICS.jpg)
-- ![Spreading Process User Interface](docs/image/Spreading_Process_User_Interface.jpg)
-- ![Spreading Operator Working](docs/image/Spreading_Operator_Working.jpg)
-
-### 🟨 Relaxation Zone
+### 🟨 Relaxation
 Automated relaxation process ensuring consistent fabric handling before cutting.  
-- ![Relaxation Process Flow](docs/image/Relaxation_Process_Flow.PNG)
-- ![Relax WIP Monitoring](docs/image/Relax_WIP_Monitoring.jpg)
-- ![Relax Operator Working](docs/image/Relax_Operator_Working.jpg)
+<p align="center">
+  <!-- <figure style="display:inline-block; text-align:center; margin:0 15px;"> -->
+    <img src="docs/image/Relaxation_Process_Flow.PNG" alt="Relaxation Process Flow" width="30%">
+    <!-- <figcaption style="font-size:13px; color:gray;">
+      <b>Relaxation Process Flow</b>
+    </figcaption>
+  </figure> -->
+  <!-- <figure style="display:inline-block; text-align:center; margin:0 15px;"> -->
+    <img src="docs/image/Relax Operator working.jpg" alt="Relax Operator Working" width="30%">
+    <!-- <figcaption style="font-size:13px; color:gray;">
+      <b>Relax Operator operating the interface</b>
+    </figcaption>
+  </figure> -->
+</p>
+
+
+### 🟩 Cutting & Spreading
+Automated fabric spreading and cutting managed by the CICS system.  
+<p align="center">
+  <img src="docs/image/Cutting_Task_Allocation as per CICS.jpg" alt="Overall Flow" width="45%" style="margin-right:15px;"/>
+  <img src="docs/image/Spreading_Process_User_Interface .jpg" alt="Overall Flow" width="45%" style="margin-right:15px;"/>  
+</p>
+
 
 ### 🟥 Inspection Zone
 AI-based visual inspection for fabric quality and defect detection.  
@@ -168,17 +180,6 @@ This project demonstrates a **real-world Industry 4.0 architecture** with strong
 - **Reinforcement Learning** for AGV decision making under uncertainty  
 - **Digital Twin Simulation** for system optimization and predictive analytics  
 - **Collaborative Human-Robot Interaction** for mixed-mode operations  
-
----
-
-## 🖼️ Demonstrations
-
-| Category | Example Interfaces |
-|-----------|--------------------|
-| **System Monitoring** | ![RCS Main Interface](docs/image/RCS_Main_Interface.PNG), ![RCS Statics Interface](docs/image/RCS_Statics_Interface.PNG) |
-| **Process Flow** | ![System Process Flow](docs/image/System_Process_Flow.png), ![Overall Process Flow](docs/image/Overall_Process_Flow.PNG) |
-| **Automation Zones** | ![Spreading User Interface](docs/image/Spreading_User_Interface.jpg), ![Inspection Workstation](docs/image/Inspection_WorkStaton.jpg) |
-| **AGV Operations** | ![AGV Charging Station 2](docs/image/AGV_Charging_Station_2.jpg), ![AGV Charging Station 3](docs/image/AGV_Charging_Station_3.jpg) |
 
 ---
 
