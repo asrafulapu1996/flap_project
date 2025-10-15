@@ -79,9 +79,9 @@ Physical Infrastructure
 ```
 
 **Reference Figures:**
-- `docs/image/CICS_Information_Flow.png` — Information hierarchy  
-- `docs/image/Overall_Process_Flow.PNG` — Material and data flow  
-- `docs/image/System_Process_Flow.png` — Control logic and process coordination  
+- ![CICS Information Flow](docs/image/CICS_Information_Flow.png)
+- ![Overall Process Flow](docs/image/Overall_Process_Flow.PNG)
+- ![System Process Flow](docs/image/System_Process_Flow.png)
 
 ---
 
@@ -89,30 +89,32 @@ Physical Infrastructure
 
 ### 🟦 Operation Center
 Centralized dashboard for monitoring all robotic and automation systems.  
-- `docs/image/Operation_Center_Main_Interface.PNG`  
-- `docs/image/Operation_Center_Second_Interface.PNG`
+- ![Operation Center Main Interface](docs/image/Operation_Center_Main_Interface.PNG)
+- ![Operation Center Second Interface](docs/image/Operation_Center_Second_Interface.PNG)
 
 ### 🟩 Cutting & Spreading Zone
 Automated fabric spreading and cutting managed by the CICS system.  
-- `docs/image/Cutting_Task_Allocation_as_per_CICS.jpg`  
-- `docs/image/Spreading_Process_User_Interface.jpg`  
-- `docs/image/Spreading_Operator_Working.jpg`
+- ![Cutting Task Allocation as per CICS](docs/image/Cutting_Task_Allocation_as_per_CICS.jpg)
+- ![Spreading Process User Interface](docs/image/Spreading_Process_User_Interface.jpg)
+- ![Spreading Operator Working](docs/image/Spreading_Operator_Working.jpg)
 
 ### 🟨 Relaxation Zone
 Automated relaxation process ensuring consistent fabric handling before cutting.  
-- `docs/image/Relaxation_Process_Flow.PNG`  
-- `docs/image/Relax_WIP_Monitoring.jpg`  
-- `docs/image/Relax_Operator_Working.jpg`
+- ![Relaxation Process Flow](docs/image/Relaxation_Process_Flow.PNG)
+- ![Relax WIP Monitoring](docs/image/Relax_WIP_Monitoring.jpg)
+- ![Relax Operator Working](docs/image/Relax_Operator_Working.jpg)
 
 ### 🟥 Inspection Zone
 AI-based visual inspection for fabric quality and defect detection.  
-- `docs/image/Inspection_WorkStaton.jpg`  
-- `docs/image/Inspection_Worker_Operationg.jpg`
+- ![Inspection Workstation](docs/image/Inspection_WorkStaton.jpg)
+- ![Inspection Worker Operating](docs/image/Inspection_Worker_Operationg.jpg)
 
 ### 🟧 AGV / AMR Transportation
 Autonomous robots perform inter-process material transport and staging.  
-- Charging Stations: `docs/image/AGV_Charging_Station_2.jpg`, `docs/image/AGV_Charging_Station_3.jpg`, `docs/image/AGV_Charing_Station.jpg`  
-- Empty Trolley Zone: `docs/image/Empty_Trolley_Zone.jpg`
+- ![AGV Charging Station 2](docs/image/AGV_Charging_Station_2.jpg)
+- ![AGV Charging Station 3](docs/image/AGV_Charging_Station_3.jpg)
+- ![AGV Charging Station 1](docs/image/AGV_Charing_Station.jpg)
+- ![Empty Trolley Zone](docs/image/Empty_Trolley_Zone.jpg)
 
 ---
 
@@ -173,10 +175,10 @@ This project demonstrates a **real-world Industry 4.0 architecture** with strong
 
 | Category | Example Interfaces |
 |-----------|--------------------|
-| **System Monitoring** | `docs/image/RCS_Main_Interface.PNG`, `docs/image/RCS_Statics_Interface.PNG` |
-| **Process Flow** | `docs/image/System_Process_Flow.png`, `docs/image/Overall_Process_Flow.PNG` |
-| **Automation Zones** | `docs/image/Spreading_User_Interface.jpg`, `docs/image/Inspection_WorkStaton.jpg` |
-| **AGV Operations** | `docs/image/AGV_Charging_Station_2.jpg`, `docs/image/AGV_Charging_Station_3.jpg` |
+| **System Monitoring** | ![RCS Main Interface](docs/image/RCS_Main_Interface.PNG), ![RCS Statics Interface](docs/image/RCS_Statics_Interface.PNG) |
+| **Process Flow** | ![System Process Flow](docs/image/System_Process_Flow.png), ![Overall Process Flow](docs/image/Overall_Process_Flow.PNG) |
+| **Automation Zones** | ![Spreading User Interface](docs/image/Spreading_User_Interface.jpg), ![Inspection Workstation](docs/image/Inspection_WorkStaton.jpg) |
+| **AGV Operations** | ![AGV Charging Station 2](docs/image/AGV_Charging_Station_2.jpg), ![AGV Charging Station 3](docs/image/AGV_Charging_Station_3.jpg) |
 
 ---
 
