@@ -14,93 +14,105 @@
 ---
 
 ## 🧠 Overview
-The **FLAP Project** (Factory Logistics Automation Platform) is a flagship **Industry 4.0 initiative** developed by **Crystal International Group Ltd.**, one of the world’s leading **Ready-Made Garments (RMG)** manufacturers.  
+
+The **FLAP Project** (Factory Logistics Automation Platform) is a flagship **Industry 4.0 initiative** by **Crystal International Group Ltd.**, one of the world’s leading **Ready-Made Garments (RMG)** manufacturers.  
 It integrates **robotics**, **industrial automation**, and **digital manufacturing systems** into a unified, intelligent production ecosystem.
 
 After successful implementation in China, FLAP demonstrated:
-- 🚀 **40% higher production efficiency**
-- ⚙️ Reduced manual labor & human error
-- 🔄 Seamless process-to-process information and material flow
-- 📈 Enhanced data visibility and production traceability
 
-**Amigo Bangladesh Ltd.**, a subsidiary of Crystal Group, is the first Bangladeshi facility to implement this **end-to-end automation system**, marking a significant step toward **smart manufacturing transformation** in the textile sector.
+- 🚀 **40% higher production efficiency**
+- ⚙️ Reduced manual labor and human error
+- 🔄 Seamless process-to-process information and material flow
+- 📈 Enhanced data visibility and traceability
+
+**Amigo Bangladesh Ltd.**, a subsidiary of Crystal Group, is the first facility in Bangladesh to implement this system, representing a major leap toward **smart manufacturing transformation** in the textile industry.
 
 ---
 
 ## 👨‍🔧 Author & Role
+
 **Md. Asraful Hasan Apu**  
 *Senior Robotics & Automation Engineer*  
 Crystal International Group Ltd.  
 
 **Responsibilities:**
-- Developed intelligent **AGV/AMR systems** for automated material transport using **AI-driven navigation** and **dynamic path planning**.
-- Integrated **robotic arms, elevators, and conveyors** with AGVs for full material-handling automation.
-- Established **MES–RCS communication** for process synchronization and job execution.
-- Designed **PLC/HMI-based subsystems** for localized automation and system feedback.
-- Managed **cross-functional team collaboration**, user training, and project timelines.
-- Oversaw **budget and performance optimization** for robotic and automation deployments.
+
+- Developed intelligent **AGV/AMR systems** for automated material transport using **AI-driven navigation** and **dynamic path planning**.  
+- Integrated **robotic arms, elevators, and conveyors** with AGVs for complete material-handling automation.  
+- Established **MES–RCS communication** for synchronized process execution.  
+- Designed and deployed **PLC/HMI-based subsystems** integrated into the central control framework.  
+- Led **cross-functional coordination**, user training, and on-site deployment.  
+- Managed **budget and performance optimization** for robotic and automation rollouts.
 
 ---
 
 ## 🏗️ System Architecture
 
-<p align="center">
-  <img src="HIKRobot_Platform_Architecture.jpg" alt="System Architecture" width="750"/>
-</p>
+![Layered Architecture](docs/image/layered-architecture.png)
 
-### 🔹 Layered Architecture
+### 🔹 Multilayer Control Architecture
 
-The FLAP architecture is based on a **multi-layer control hierarchy**, ensuring seamless communication between enterprise-level systems and field-level robotic devices.
+The FLAP architecture follows a **hierarchical control model**, ensuring seamless data and command flow between enterprise-level decision systems and field-level robotic equipment.
 
+```
 Enterprise Layer
-├── CICS (Central Information & Control System)
-│ ├── MES (Manufacturing Execution System)
-│ ├── WMS (Warehouse Management System)
-│ └── RCS (Robotic Control System)
-│
-└── Field Layer
-├── AGV / AMR Robots
-├── Robotic Arms
-├── Elevators, Conveyors
-└── PLC/HMI Systems
+ ├── CICS (Central Information & Control System)
+ │    ├── MES (Manufacturing Execution System)
+ │    ├── WMS (Warehouse Management System)
+ │    └── RCS (Robotic Control System)
+ │
+ └── Control & Orchestration Layer
+      ├── Orchestrator / Scheduler (Job allocation, KPI, logging)
+      ├── Fleet Manager (AGV task allocation & optimization)
+      └── Integration API (OPC-UA / REST / MQTT)
 
+Field Layer
+ ├── AGV / AMR Robots (Navigation, local control)
+ ├── Robotic Arms (Pick/place, loading)
+ ├── PLC/HMI Systems (Local machine control)
+ └── Vision Systems (Inspection / QC)
 
-**Key Figures:**
-- `CICS_Information_Flow.png` — Information hierarchy  
-- `Overall_Process_Flow.PNG` — Material and data flow  
-- `System_Process_Flow.png` — Process logic and control relationship  
+Physical Infrastructure
+ ├── Charging Stations
+ ├── Conveyors & Elevators
+ └── Workstations (Cutting, Spreading, Relaxation, Inspection)
+```
+
+**Reference Figures:**
+- `docs/image/CICS_Information_Flow.png` — Information hierarchy  
+- `docs/image/Overall_Process_Flow.PNG` — Material and data flow  
+- `docs/image/System_Process_Flow.png` — Control logic and process coordination  
 
 ---
 
 ## ⚙️ Process Flow Breakdown
 
-### 🟦 1. Operation Center
-Centralized dashboard for system supervision, robot tracking, and data visualization.  
-Interfaces include:
-- `Operation_Center_Main_Interface.PNG`
-- `Operation_Center_Second_Interface.PNG`
+### 🟦 Operation Center
+Centralized dashboard for monitoring all robotic and automation systems.  
+- `docs/image/Operation_Center_Main_Interface.PNG`  
+- `docs/image/Operation_Center_Second_Interface.PNG`
 
-### 🟩 2. Cutting & Spreading Zone
-Automated cutting and fabric spreading linked directly to CICS for task execution.  
-- `Cutting_Task_Allocation_as_per_CICS.jpg`  
-- `Spreading_Process_User_Interface.jpg`  
-- `Spreading_Operator_Working.jpg`
+### 🟩 Cutting & Spreading Zone
+Automated fabric spreading and cutting managed by the CICS system.  
+- `docs/image/Cutting_Task_Allocation_as_per_CICS.jpg`  
+- `docs/image/Spreading_Process_User_Interface.jpg`  
+- `docs/image/Spreading_Operator_Working.jpg`
 
-### 🟨 3. Relaxation Zone
-Automated relaxation process with WIP tracking and operator interface.  
-- `Relaxation_Process_Flow.PNG`  
-- `Relax_WIP_Monitoring.jpg`  
-- `Relax_Operator_Working.jpg`
+### 🟨 Relaxation Zone
+Automated relaxation process ensuring consistent fabric handling before cutting.  
+- `docs/image/Relaxation_Process_Flow.PNG`  
+- `docs/image/Relax_WIP_Monitoring.jpg`  
+- `docs/image/Relax_Operator_Working.jpg`
 
-### 🟥 4. Inspection Zone
-AI-driven defect detection and quality inspection via smart vision systems.  
-- `Inspection_WorkStaton.jpg`  
-- `Inspection_Worker_Operationg.jpg`
+### 🟥 Inspection Zone
+AI-based visual inspection for fabric quality and defect detection.  
+- `docs/image/Inspection_WorkStaton.jpg`  
+- `docs/image/Inspection_Worker_Operationg.jpg`
 
-### 🟧 5. AGV / AMR Transportation
-Fleet of AGV/AMR robots managing real-time logistics between workstations.  
-- Charging Stations: `AGV_Charging_Station_2.jpg`, `AGV_Charging_Station_3.jpg`, `AGV_Charing_Station.jpg`
-- Material Queue Zone: `Empty_Trolley_Zone.jpg`
+### 🟧 AGV / AMR Transportation
+Autonomous robots perform inter-process material transport and staging.  
+- Charging Stations: `docs/image/AGV_Charging_Station_2.jpg`, `docs/image/AGV_Charging_Station_3.jpg`, `docs/image/AGV_Charing_Station.jpg`  
+- Empty Trolley Zone: `docs/image/Empty_Trolley_Zone.jpg`
 
 ---
 
@@ -108,13 +120,13 @@ Fleet of AGV/AMR robots managing real-time logistics between workstations.
 
 | Layer | System | Function |
 |-------|---------|----------|
-| **Enterprise** | CICS | Central command and data management |
-| **Control** | RCS | Task scheduling, path planning, AGV management |
-| **Execution** | MES | Job allocation, order tracking, production feedback |
-| **Field** | HIKRobot Platform | Hardware and sensor integration |
-| **Human Interface** | Operation Center | Visualization, analytics, control override |
+| **Enterprise** | CICS | Centralized data and command management |
+| **Control** | RCS | AGV task execution and path planning |
+| **Execution** | MES | Scheduling and production tracking |
+| **Field** | HIKRobot Platform | Hardware integration and sensor data |
+| **Human Interface** | Operation Center | Real-time analytics and supervision |
 
-Each system communicates over **TCP/IP and OPC-UA**, enabling **real-time synchronization** between physical robots and digital systems.
+All systems communicate through **TCP/IP** and **OPC-UA**, enabling full interoperability between digital control and robotic execution layers.
 
 ---
 
@@ -122,70 +134,74 @@ Each system communicates over **TCP/IP and OPC-UA**, enabling **real-time synchr
 
 | Component | Description |
 |------------|-------------|
-| **AGV/AMR Robots** | Smart mobile robots for intra-factory material logistics |
-| **RCS (Robotic Control System)** | Real-time AGV fleet management and route optimization |
-| **PLC/HMI Systems** | Embedded automation for process equipment |
-| **Vision Systems** | AI-based inspection and quality control |
-| **HIKRobot Framework** | Localization, camera tracking, and motion feedback |
-| **CICS Dashboard** | Global system supervision and analytics |
+| **AGV / AMR Robots** | Autonomous mobile platforms for fabric and WIP transport |
+| **RCS (Robotic Control System)** | Multi-robot coordination and navigation control |
+| **PLC / HMI Systems** | Local automation for conveyors and mechanical stations |
+| **Vision Systems** | AI-based fabric inspection and quality detection |
+| **HIKRobot Framework** | Provides vision tracking, sensor data, and localization |
+| **CICS Dashboard** | Unified monitoring and analytics across all subsystems |
 
 ---
 
 ## 📊 Project Outcomes
 
 ✅ **40% increase in production throughput**  
-✅ **Full traceability** from fabric input to cutting and inspection  
-✅ **Zero manual intervention** in inter-process material movement  
+✅ **End-to-end digital traceability** of materials  
+✅ **Zero manual intervention** in logistics between processes  
 ✅ **First full FLAP deployment in Bangladesh**  
-✅ **Scalable integration model** for future expansion (ASRS, cobots, etc.)
+✅ **Modular design** for scalable Industry 4.0 integration  
 
 ---
 
 ## 🔬 Research & Innovation Insights
 
-This project represents a real-world **Industry 4.0 implementation case study** with academic relevance in:
-- Multi-robot task allocation and path planning  
-- Cyber-physical MES–RCS–AGV coordination  
-- Adaptive scheduling for dynamic manufacturing  
-- Vision-guided inspection and AI-enabled logistics  
+This project demonstrates a **real-world Industry 4.0 architecture** with strong research implications in:
+
+- Multi-robot task allocation and optimization  
+- Cyber-physical MES–RCS–AGV integration  
+- Vision-based inspection and quality control  
+- Intelligent scheduling and dynamic path planning  
 
 ### 🧩 Future Research Directions
-- Reinforcement Learning for AGV decision-making  
-- Digital Twin simulation for predictive analytics  
-- Collaborative human–robot interaction in RMG workflow  
+- **Reinforcement Learning** for AGV decision making under uncertainty  
+- **Digital Twin Simulation** for system optimization and predictive analytics  
+- **Collaborative Human-Robot Interaction** for mixed-mode operations  
 
 ---
 
 ## 🖼️ Demonstrations
 
-| Category | Example Images |
-|-----------|----------------|
-| **System Monitoring** | `RCS_Main_Interface.PNG`, `RCS_Statics_Interface.PNG` |
-| **Process Flow** | `System_Process_Flow.png`, `Overall_Process_Flow.PNG` |
-| **Automation Zones** | `Spreading_User_Interface.jpg`, `Inspection_WorkStaton.jpg` |
-| **AGV Operations** | `AGV_Charging_Station_2.jpg`, `AGV_Charging_Station_3.jpg` |
+| Category | Example Interfaces |
+|-----------|--------------------|
+| **System Monitoring** | `docs/image/RCS_Main_Interface.PNG`, `docs/image/RCS_Statics_Interface.PNG` |
+| **Process Flow** | `docs/image/System_Process_Flow.png`, `docs/image/Overall_Process_Flow.PNG` |
+| **Automation Zones** | `docs/image/Spreading_User_Interface.jpg`, `docs/image/Inspection_WorkStaton.jpg` |
+| **AGV Operations** | `docs/image/AGV_Charging_Station_2.jpg`, `docs/image/AGV_Charging_Station_3.jpg` |
 
 ---
 
 ## 🚀 Future Expansion
+
 - Integration of **ASRS (Automated Storage & Retrieval System)**  
-- Implementation of **robotic manipulators** for material loading/unloading  
-- Deployment of **predictive maintenance AI** modules  
-- **Cloud synchronization** across regional factories  
+- Deployment of **robotic manipulators** for automatic loading/unloading  
+- Implementation of **predictive maintenance** using AI and analytics  
+- Global **cloud synchronization** for centralized production management  
 
 ---
 
 ## 📚 Citation
 
-If you reference this work in research or presentations, please cite as:
+If you reference this work in research, reports, or presentations, please cite:
 
-Hasan, M. A. (2025). Robotics and Automation in RMG Manufacturing (FLAP Project).
+```
+Hasan, M. A. (2025). Robotics and Automation in RMG Manufacturing (FLAP Project).  
 Crystal International Group Ltd., Amigo Bangladesh Ltd.
-
+```
 
 ---
 
 ## 📞 Contact
+
 **Md. Asraful Hasan Apu**  
 Senior Robotics & Automation Engineer  
 Crystal International Group Ltd. | Amigo Bangladesh Ltd.  
