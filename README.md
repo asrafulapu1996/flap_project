@@ -1,4 +1,4 @@
-# 🤖 FLAP-Robotics and Automation in RMG Manufacturing
+#  FLAP-Robotics and Automation in RMG Manufacturing
 
 **Crystal International Group Ltd. | Amigo Bangladesh Ltd.**  
 *Industry 4.0 Implementation in Ready-Made Garments (RMG) Manufacturing*
@@ -49,7 +49,7 @@ Crystal International Group Ltd.
 ## 🏗️ System Architecture
 
 <p align="center">
-  <img src="docs/image/HIKRobot_Platform_Architecture.jpg" alt="System Flow" width="75%" style="margin-right:15px;"/>
+  <img src="docs/image/hikrobot_platform_architecture.jpg" alt="System Flow" width="75%" style="margin:25px;"/>
 </p>
 
 ### 🔹 Multilayer Control Architecture
@@ -77,7 +77,7 @@ Physical Infrastructure
 
 **Reference Figures:**
 <p align="center">
-  <img src="docs/image/System Process Flow.png" alt="System Flow" width="75%" style="margin-right:15px;"/>
+  <img src="docs/image/system_process_flow.png" alt="System Flow" width="75%" style="margin:25px;"/>
 </p>
 
 ---
@@ -87,46 +87,48 @@ Physical Infrastructure
 ### 🟦 Overall Process Flow
 Overall flow of process how material and informations transferred processwise. 
 <p align="center">
-  <img src="docs/image/Overall_Process_Flow.PNG" alt="Overall Flow" width="75%" style="margin-right:15px;"/>  
+  <img src="docs/image/overall_process_flow.PNG" alt="Overall Flow" width="75%" style="margin:25px;"/>  
 </p>
 
 ### 🟨 Relaxation
 Automated relaxation process ensuring consistent fabric handling before cutting.  
 <p align="center">
-  <!-- <figure style="display:inline-block; text-align:center; margin:0 15px;"> -->
-    <img src="docs/image/Relaxation_Process_Flow.PNG" alt="Relaxation Process Flow" width="30%">
-    <!-- <figcaption style="font-size:13px; color:gray;">
-      <b>Relaxation Process Flow</b>
-    </figcaption>
-  </figure> -->
-  <!-- <figure style="display:inline-block; text-align:center; margin:0 15px;"> -->
-    <img src="docs/image/Relax Operator working.jpg" alt="Relax Operator Working" width="30%">
-    <!-- <figcaption style="font-size:13px; color:gray;">
-      <b>Relax Operator operating the interface</b>
-    </figcaption>
-  </figure> -->
+    <img src="docs/image/relaxation_process_flow.PNG" alt="relaxation_process_flow" width="45%">
+    <img src="docs/image/relax_operator_working2.jpg" alt="relax_operator_working2" width="40%">
 </p>
 
 
 ### 🟩 Cutting & Spreading
 Automated fabric spreading and cutting managed by the CICS system.  
 <p align="center">
-  <img src="docs/image/Cutting_Task_Allocation as per CICS.jpg" alt="Overall Flow" width="45%" style="margin-right:15px;"/>
-  <img src="docs/image/Spreading_Process_User_Interface .jpg" alt="Overall Flow" width="45%" style="margin-right:15px;"/>  
+  <img src="docs/image/cutting_task_allocation_as_per_CICS.jpg" alt="Overall Flow" width="40%" style="margin:25px;"/>
+  <img src="docs/image/spreading_process_user_interface.jpg" alt="Overall Flow" width="40%" style="margin:25px;"/>  
 </p>
 
 
 ### 🟥 Inspection Zone
-AI-based visual inspection for fabric quality and defect detection.  
-- ![Inspection Workstation](docs/image/Inspection_WorkStaton.jpg)
-- ![Inspection Worker Operating](docs/image/Inspection_Worker_Operationg.jpg)
+Fbric Inspection process has been automated by AGV transportation and User interface based working procedure 
+<p align="center">
+  <img src="docs/image/inspection_workstation.jpg" alt="Overall Flow" width="40%" style="margin:25px;"/>
+  <img src="docs/image/inspection_worker_operating.jpg" alt="Overall Flow" width="40%" style="margin:25px;"/>  
+</p>
 
-### 🟧 AGV / AMR Transportation
+## ⚙️ Autonomous Mobile Robots
+
+### 🟦 AGV (Automated Guided Vehicle) System Configurtion
+AGV System configuration by RCS (Robotic Control System) and Fleet Management
+<p align="center"style=align-items: center;">
+  <img src="docs/image/rcs.PNG" alt="Overall Flow" width="40%" style="margin:25px;"/>
+  <img src="docs/image/monitor_client.PNG" alt="Overall Flow" width="40%" style="margin:25px;"/>  
+</p>
+
+
+### 🟧 AGV Operation
 Autonomous robots perform inter-process material transport and staging.  
-- ![AGV Charging Station 2](docs/image/AGV_Charging_Station_2.jpg)
-- ![AGV Charging Station 3](docs/image/AGV_Charging_Station_3.jpg)
-- ![AGV Charging Station 1](docs/image/AGV_Charing_Station.jpg)
-- ![Empty Trolley Zone](docs/image/Empty_Trolley_Zone.jpg)
+<p align="center">
+  <img src="docs/image/agv_operation.jpg" alt="Overall Flow" width="30%" style="margin:25px;"/>
+  <img src="docs/image/robot_arm_operation.jpg" alt="Overall Flow" width="30%" style="margin:25px;"/>  
+</p>
 
 ---
 
@@ -176,43 +178,13 @@ This project demonstrates a **real-world Industry 4.0 architecture** with strong
 - Vision-based inspection and quality control  
 - Intelligent scheduling and dynamic path planning  
 
-### 🧩 Future Research Directions
-- **Reinforcement Learning** for AGV decision making under uncertainty  
-- **Digital Twin Simulation** for system optimization and predictive analytics  
-- **Collaborative Human-Robot Interaction** for mixed-mode operations  
 
----
 
-## 🚀 Future Expansion
 
-- Integration of **ASRS (Automated Storage & Retrieval System)**  
-- Deployment of **robotic manipulators** for automatic loading/unloading  
-- Implementation of **predictive maintenance** using AI and analytics  
-- Global **cloud synchronization** for centralized production management  
 
----
-
-## 📚 Citation
-
-If you reference this work in research, reports, or presentations, please cite:
-
-```
-Hasan, M. A. (2025). Robotics and Automation in RMG Manufacturing (FLAP Project).  
-Crystal International Group Ltd., Amigo Bangladesh Ltd.
-```
-
----
-
-## 📞 Contact
-
-**Md. Asraful Hasan Apu**  
-Senior Robotics & Automation Engineer  
-Crystal International Group Ltd. | Amigo Bangladesh Ltd.  
-📍 Bangladesh  
-📧 [Email](mailto:example@email.com) | 🔗 [LinkedIn](#) | 💻 [GitHub](#)
 
 ---
 
 <p align="center">
-  © 2025 Crystal International Group Ltd. — All Rights Reserved  
+  © 2025 Md Asraful Hasan Apu — All Rights Reserved  
 </p>
