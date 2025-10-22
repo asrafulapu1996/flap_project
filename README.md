@@ -1,4 +1,4 @@
-#  FLAP-Robotics and Automation in RMG Manufacturing
+#  FLAP–Autonomous Mobile Robot Driven Cyber-Physical Smart Manufacturing System in RMG Industry
 
 **Crystal International Group Ltd. | Amigo Bangladesh Ltd.**  
 *Industry 4.0 Implementation in Ready-Made Garments (RMG) Manufacturing*
